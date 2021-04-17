@@ -2,11 +2,16 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const Game = ({ game }) => {
+  const formatDate = (date) => {
+    const dateArr = date.split("-");
+    return `${dateArr[2]}/${dateArr[1]}/${dateArr[0]}`;
+  };
+
   return (
     <StyledGame>
       <h3>{game.name}</h3>
-      <p>{game.released}</p>
       <img src={game.background_image} alt={game.name} />
+      <p>Release Date: {formatDate(game.released)}</p>
     </StyledGame>
   );
 };
