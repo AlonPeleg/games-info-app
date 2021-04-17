@@ -1,9 +1,11 @@
-import { popularGamesURL } from "./api";
+import GlobalStyles from "./components/GlobalStyles";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <GlobalStyles />
+      <Home />
     </div>
   );
 };
