@@ -11,7 +11,7 @@ const Game = ({ game }) => {
     <StyledGame>
       <h3>{game.name}</h3>
       <img src={game.background_image} alt={game.name} />
-      <p>Release Date: {formatDate(game.released)}</p>
+      <p>{formatDate(game.released)}</p>
     </StyledGame>
   );
 };
